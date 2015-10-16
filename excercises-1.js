@@ -26,18 +26,32 @@
 
 
 
+var add = function (num1, num2) {
+	return num1 + num2; 
+}
+console.log(add(2,3)); 
+
 
 // Q2
 // Write a function named `avg` that takes 3 parameters
 // and returns the average of those 3 numbers.
 
+var avg = function (num1 , num2, num3) {
+	return num1 + num2 + num3 / 3;
+}
 
+console.log(avg(43, 342, 2));
 
 
 // Q3
 // Write a function called `getLength` that takes one
 // parameter (a string) and returns the length
 
+function getLength (str) {
+	return str.length;
+}
+
+console.log(getLength("fddfa"));
 
 
 
@@ -48,6 +62,15 @@
 // the function should return `false`.
 
 
+function greaterThan (a , b) {
+	if(a < b){
+		return true;
+	} 
+	return false;
+									
+}
+
+console.log(greaterThan(2, 4));
 
 
 // Q5
@@ -57,21 +80,31 @@
 // is the parameter that was passed in.
 
 
+function greet(name) {
+	return "Hello, " + name ;
+}
+
+console.log(greet(name));
 
 
-// Q6
-// Write a function called `madlib` that takes
-// 4 or more parameters (words). The function 
-// should insert the words into a pre-defined
-// sentence. Finally the function should return
-// that sentence.
+
+// Write a function called `madlib` yayayayayayayayaayaay
+//that takes 4 or more parameters (words). yyyyygygygygygygygyg
+//The function should insert the words into a pre-defined sentence. 
+//Finally the function should return that sentence.
+
+
+
 // Note: When I say words and sentence I mean
 // strings. For example:
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 
 
-
-
+function madlib (word1, word2, word3, word4) {
+	return word1 + word2 + word3 + word4 + "over the fence" ;
+	
+}
+console.log(madlib("quick ","brown ", "fox ", "jumps "));
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
