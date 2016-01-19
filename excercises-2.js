@@ -45,9 +45,16 @@ console.log(isVowel('o'));
 // ---------------------
 
 function rovarspraket(phrase){
-    //...
+    var consonant = ['b', 'c', 'd', 'f', 'g'];
+    for (var i=0; i < consonant.length; i++){
+    	if (lettertoCheck == consonants[i]){
+    		isConstant = true;
+    	}
+    }
+    return isConsonantl
 }
 
+function translate(sting, vowel) {}
 
 
 // ---------------------
