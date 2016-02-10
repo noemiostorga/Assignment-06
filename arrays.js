@@ -19,7 +19,7 @@ var instructors = [
 // ---------------------------
 // 1. Find largest number
 // ---------------------------
-if (var i=0; i<)
+if (var i=0; i<;)
 
 
 
@@ -29,11 +29,9 @@ if (var i=0; i<)
 
 
 
-
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
-
 
 
 // ---------------------------
@@ -58,3 +56,11 @@ if (var i=0; i<)
 // 6. Use the Instructors array and find all that teach JavaScript, 
 //    then sort them alphabetically
 // ---------------------------
+
+
+
+
+
+
+
+

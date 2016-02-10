@@ -2,103 +2,126 @@
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // ---------------------
 
-function max(a,b){
-	if (a > b) {
-		return a;
-	} return b;
+function max(a, b){
+    if(a > b){
+        return a;
+    }
+    else{
+        return b;
+    }
 }
-console.log(max(12,34));
+
+console.log(max(34, 65));
+
+
 
 // ---------------------
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // ---------------------
-
 function maxOfThree(a, b, c){
-	return Math.max(a, b, c);
+    if(a > b && a > c){
+        return a;
+    }
+    else if (b > a && b > c){
+        return b;
+    }
+    else if (c > a && c > b){
+        return c;
+    }
+    else{
+        console.log("same numbers");
+    }
 }
 
-console.log(maxOfThree(34,723,434));
+console.log(maxOfThree(23,33,13));
 
 // ---------------------
 // Write a function that takes a character and returns true if it is a vowel, false otherwise.
 // ---------------------
 
-function isVowel(char){
- 
- }
+function vowel(letter){
 
-console.log(isVowel("cat"));
+var vowels = ["a","e", "i","o", "u"];
 
+    for(var i = 0; i < vowels.length; i++){ //i is just a starting base, vowels.length is what keeps i going throught the array
+        if(letter === vowels[i]){
+            return true;
+        }
+    } 
 
-function isVowel(char){
-	if(char == 'a' || char == 'e' || char == 'i' || char =='o' || char == 'u') {
-		return true;
-	} else {
-		return false; 
-	}
+    return false;
+
 }
 
-console.log(isVowel('o'));
+console.log(vowel("e"));
+
 
 // ---------------------
 // Write a function translate() that will translate a text into "rÃ¶varsprÃ¥ket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 // ---------------------
 
-function rovarspraket(phrase){
-    var consonant = ['b', 'c', 'd', 'f', 'g'];
-    for (var i=0; i < consonant.length; i++){
-    	if (lettertoCheck == consonants[i]){
-    		isConstant = true;
-    	}
+<!--IMPORTANT TO COME BACK -->
+
+function translate(param){
+
+    var vowels = ["a","e","i","o","u"];
+
+
+    for(var i= 0; i < vowels.length; i ++){
+
+        if(param[i] !== vowels[i]){
+            return param.split("").join("o");
+        }
     }
-    return isConsonantl
 }
 
-function translate(sting, vowel) {}
 
+console.log(translate("this is fun"));
 
 // ---------------------
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse_string(str){
-	return str.reverse;
+function reverse(param){
+        return param.split("").reverse().join("");
 }
 
-console.log(reverse_string("pia"));
+console.log(reverse("jag testar"));
 // ---------------------
 // Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
 // ---------------------
+/*function findLongestWord(param){ //reduce
+    for(var i=0; i <param.length; i++){
+        if(a > b){
+            return a;
+        }
 
-function findLongestWord(words){
-   words= []
-
-    for (var i=0; i < words.length[i]; i++) {
-    	return words;
     }
 }
-console.log(findLongestWord("what"));
+
+
+
+console.log(findLongestWord(["car","cd","fds","fd"]))
+*/
+
 
 // ---------------------
 // Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
 // ---------------------
 
-function filterLongWords(words, i){
-    arr.reduce(words[i]);
-    for (var i=0; i<words.length; i ++){
 
-    }
-}
-arr
-console.log(filterLongWords())
 
 // ---------------------
 // Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
 // ---------------------
 
-function charFreq(string){
-    
-}
+
+
+
+/*what did i learn today*/
+//if statements are for one tests
+//    and else if are for multiple tests if the first one is false
+//when writing parameters you don't put brakets or quotes. If these are desired you can but it in the console.log
 
 
 
