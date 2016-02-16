@@ -19,7 +19,15 @@ var instructors = [
 // ---------------------------
 // 1. Find largest number
 // ---------------------------
-if (var i=0; i<;)
+
+
+function largestNum(){
+    for(var i=0;i < numbers.length; i++){
+        return numbers[i];
+    }
+}
+
+console.log(largestNum(numbers));
 
 
 
@@ -27,11 +35,20 @@ if (var i=0; i<;)
 // 2. Find longest string
 // ---------------------------
 
+function longestString(){
+
+}
+
 
 
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
+
+
+function evenNum(){
+
+}
 
 
 // ---------------------------
